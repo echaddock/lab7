@@ -23,7 +23,7 @@ exports.addProject = function(req, res) {
   // YOU MUST send an OK response w/ res.send
   console.log(form_data);
   var newPost = new models.Project({ 
-    "title": form_data['title'],
+    "title": form_data['project_title'],
     "date" : form_data['date'],
     "summary": form_data['summary'],
     "image": form_data['image_url']
